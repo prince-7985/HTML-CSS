@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       header{
+        position: sticky;
+        top: 0%;
+       }
+       main{
+        background-color: black;
+        padding: 4px;
+       }
+        nav{
+          
+            height: 20vh;
+            background-color: palevioletred;
+            
+        }
+        .container{
+            text-align: center;
+            /* margin: 4px 10px; */
+            margin: 12px 34px;
+            padding: 55px 23px;
+            /* width: 80%; */
+            background-color: rgb(112, 216, 143);
+        }
+        .one{
+            height: 70vh;
+            width: 45%;
+        margin: 0px 12px;
+        /* display: inline block; */
+        display: inline-block;
+        background-color: aquamarine;
+        }
+        .second{
+            height: 70vh;
+            width: 45%;
+        margin: 0px 12px;
+        display: inline-block;
+        background-color: blueviolet;
+        }
+        .text{
+            border-radius: 18px;
+            border: 2px solid whitesmoke;
+            color: white;
+            font-size: 30px;
+            margin: 50px 30vw ;
+            padding: 34px;
+            
+        }
+        .orange{
+           background-color: orange;
+    position: fixed;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    bottom: 12px;
+    right: 20px;
+        }
+        footer{
+            background-color: rgb(142, 190, 47);
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="one"></div>
+            <div class="second"></div>
+        </div>
+        <div class="text">
+            <p>Welcome to first design website layout</p>
+        </div>
+        <div class="orange">
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

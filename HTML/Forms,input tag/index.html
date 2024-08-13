@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - lets learn it</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .form-container {
+            width: 75vw;
+            height: 75vh;
+            /* background-color: pink; */
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-left: 50px;
+            padding-top: 30px;
+
+
+        }
+
+        .num,
+        .name {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        input {
+            height: 25px;
+            font-size: 15px;
+            padding-left: 5px;
+            border-style: none;
+            border: 2px solid rgb(119, 199, 119);
+            width: 250px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .gender{
+            display:flex ;
+        }
+        .gender input{
+            width: 40px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello Everyone lets fill forms for student id</h1>
+    <form action="post">
+        <div class="form-container">
+            <div class="name">
+                <label for="username">Enter your name:</label>
+                <input type="text" name="username" id="username" placeholder="enter your user name" autofocus>
+            </div>
+            <div class="num">
+                <label for="number">Enrollment number:</label>
+                <input type="number" name="number" id="number" placeholder="Enrollment number" autofocus>
+            </div>
+            <div class="fathers name">
+                <label for="number">Enter Fathers name:</label>
+                <input type="text" name="number" id="number" placeholder="Father name" autofocus>
+            </div>
+            <div class="num">
+                <label for="number">Enter Mothers name:</label>
+                <input type="text" name="number" id="number" placeholder="Mothers name" autofocus>
+            </div>
+            <div class="gender">
+            <p>Select your gender:</p>
+            <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            
+            <input type="radio" id="trans" name="gender" value="trans">
+            <label for="trans">Trans</label><br>
+            
+        </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
